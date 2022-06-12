@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="/">Главная</a>
+        </li>
+        <li>
+            <a href="/contacts">Контакты</a>
+        </li>
+        <li>
+            <a href="/forma">Новости</a>
+        </li>
+    </ul>
+    НОВОСТИ:
+    <br>
+<!--    {{data}}   -->
+    <ul>
+        {% for item in data %} <!-- выводим новости, формируя страницу HTML в цикле -->
+            <li>
+                {{item}}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
